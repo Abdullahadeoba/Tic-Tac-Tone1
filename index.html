@@ -1,0 +1,77 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/unnamed.png">
+</head>
+<body class="ms-3 me-3">
+    <h1 align="center" class="text-uppercase text-decoration-underline sticky-top bg-white">Tic Tac Toe</h1>
+    <!-- <h1>Participants</h1> -->
+    <div class="row">
+        <div class="col-lg-5 col-sm-12 my-2">
+            <h3>First Player</h3>
+            <input type="text" placeholder="Enter your name" class="form-control bg-light shadow-sm" id="player1">
+        </div>
+        <div class="col-lg-5 col-sm-12 my-2">
+            <h3>Second Player</h3>
+            <input type="text" placeholder="Enter your name" class="form-control bg-light shadow-sm" id="player2">
+        </div>
+        <div>
+            <button type="button" class="btn btn-dark text-info" onclick="submit()">Play Now</button>
+            <button type="button" class="btn btn-dark text-warning" onclick="rest()">Click to Refresh</button>
+            <p id="showError" class="fs-4 fw-bold text-danger"></p>
+        </div>
+    </div>
+    <div class="mt-3 mx-auto" id="table">
+        <div class="border-2 d-flex gap-2 tr" align="center">
+            <div onclick="test(event)" id="a1" class="border border-danger bg-light td"></div>
+            <div onclick="test(event)" id="a2" class="border border-success td"></div>
+            <div onclick="test(event)" id="a3" class="border border-primary bg-light td"></div>
+        </div>
+        <div class="border-2 d-flex gap-2 tr">
+            <div onclick="test(event)" id="b1" class="border border-success td"></div>
+            <div onclick="test(event)" id="b2" class="border border-primary bg-light td"></div>
+            <div onclick="test(event)" id="b3" class="border border-danger td"></div>
+        </div>
+        <div class="border-2 d-flex gap-2 tr">
+            <div onclick="test(event)" id="c1" class="border border-primary bg-light td"></div>
+            <div onclick="test(event)" id="c2" class="border border-danger td"></div>
+            <div onclick="test(event)" id="c3" class="border border-success bg-light td"></div>
+        </div>
+        <div class="mt-1 mx-auto">
+            <button type="button" class="btn btn-success" onclick="cont()">Continue</button>
+            <button type="button" class="btn btn-danger" onclick="rest()">Restart</button>
+        </div>
+    </div>
+    <div class="mt-5 col-12 fs-2 fw-bold">
+        <marquee behavior="" direction=""><p id="board" class="text-uppercase"></p></marquee>
+    </div>
+    <div class="mt-3 mb-3 py-3">
+        <h3 class="text-decoration-underline fw-bold">Score Board</h3>
+        <div class="border border-3 border-dark border-bottom rounded px-3">
+            <div class="row px-3 text-center" id="row1">
+                <p class="col-5 mt-2">Name</p>
+                <p class="col-3 mt-2">ID</p>
+                <p class="col-3 mt-2">Score</p>
+            </div>
+            <div class="row text-center">
+                <p class="col-5 fs-3" id="name1"></p>
+                <p class="col-3 fs-2 fw-bold bg-light">X</p>
+                <p class="col-3 fs-1 fw-bold" id="score1">0</p>
+            </div>
+            <div class="row text-center">
+                <p class="col-5 fs-3" id="name2"></p>
+                <p class="col-3 fs-2 fw-bold bg-light">O</p>
+                <p class="col-3 fs-1 fw-bold" id="score2">0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

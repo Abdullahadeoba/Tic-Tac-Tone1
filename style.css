@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=DM+Serif+Display:ital@0;1&family=Mukta:wght@200&family=Ubuntu&display=swap');
+body {
+    background: url(images/360_F_290468474_6yJ9eBPW2wevarR9cbXN87TCFJDVVuAR.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    font-family: 'Bree Serif', sans-serif;
+}
+#table {
+    height: 380px;
+    width: 380px;
+    padding: 2px;
+    text-align: center;
+}
+.td {
+    height: 120;
+    width: 120;
+    text-align: center;
+    font-size: 70px;
+    border-radius: 20px;
+    
+}
+.border-danger {
+    background: -webkit-linear-gradient(#1919eb, #1919eb, #03c003, #02a102);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.border-primary {
+    background: -webkit-linear-gradient(#E61919, #eb0000, #03c003, #02a102);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.border-success {
+    background: -webkit-linear-gradient(#E61919, #eb0000, #1919eb, #1919eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#table .tr .td:hover {
+    height: 122;
+    width: 122;
+}
+.border-danger:hover{
+    box-shadow: 0 0px 5px  #E61919,  0 0px 5px  #E61919, 0 0px 5px  #E61919;
+}
+.border-primary:hover{
+    box-shadow: 0 0px 5px  #1919eb,  0 0px 5px  #1919eb, 0 0px 5px  #1919eb;
+}
+.border-success:hover{
+    box-shadow: 0 0px 5px  #69c069,  0 0px 5px  #69c069, 0 0px 5px  #69c069;
+}
+.tr {
+    padding: 3px;
+    text-align: center;
+}
+#row1 {
+    /* text-align: center; */
+    font-size: 20px;
+    font-weight: 600;
+    padding: 3px;
+}
+#row1 {
+    border-bottom: 2px solid black;
+}
+
+@media screen and (max-width:991px) {
+    body {
+        overflow-x: hidden;
+        /* font-family: 'nexa'; */
+    }
+    #table {
+        height: 250px;
+        width: 250px;
+    }
+    .td {
+        height: 80;
+        width: 80;
+        font-size: 50px;
+    }
+    #table .tr .td:hover {
+    height: 83;
+    width: 83;
+}
+}
