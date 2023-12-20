@@ -71,10 +71,10 @@ const submit = () =>{
         // alert("Register Participants!")
         showError.innerText = "Please register players name before submitting"
     }else if (player1.value = ""){
-        player1.className = "form-control border border-2 border-danger"
+        player1.className = "form-control border border-3 border-danger"
         return;
     } else if (player2.value = "") {
-        player2.className = "form-control border border-2 border-danger"
+        player2.className = "form-control border border-3 border-danger"
         return;
     }
      else{
