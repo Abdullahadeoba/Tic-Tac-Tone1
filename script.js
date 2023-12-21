@@ -39,7 +39,7 @@ const test=(e)=>{
             initialValue = "X";
             if ((a1.innerText === "O" && a2.innerText === "O" && a3.innerText === "O") || (a1.innerText === "O" && b1.innerText === "O" && c1.innerText === "O") || (a1.innerText === "O" && b2.innerText === "O" && c3.innerText === "O") || (a2.innerText === "O" && b2.innerText === "O" && c2.innerText === "O") || (a3.innerText === "O" && b3.innerText === "O" && c3.innerText === "O") || (a3.innerText === "O" && b2.innerText === "O" && c1.innerText === "O") || (b1.innerText === "O" && b2.innerText === "O" && b3.innerText === "O") || (c1.innerText === "O" && c2.innerText === "O" && c3.innerText === "O")) {
                 initialValue = ""
-                board.innerText = name2.innerText + " wins😀!"
+                board.innerText = name2.innerText + " wins😍!"
                 winSong.play()
                 // To increment the score of O
                 sc2 = sc2 + 1;
@@ -47,7 +47,7 @@ const test=(e)=>{
                 return;
                 // To now check for when a draw may happen, that is when the conditions for an X win is not met. We do this
             } else if (a1.innerText != "" && a2.innerText != "" && a3.innerText != "" && b1.innerText != "" && b2.innerText != "" && b3.innerText != "" && c1.innerText != "" && c2.innerText != "" && c3.innerText != "") {
-                board.innerText = "Stalemate🙂!"
+                board.innerText = "Stalemate😎!"
                 drawSong.play();
                 return;
             }
