@@ -2,8 +2,8 @@ let initialValue = "X";
 // We parse the values from our score board as integers so that the scores can be added up
 let sc1 = parseInt(score1.innerText);
 let sc2 = parseInt(score2.innerText);
-let winSong = new Audio ("audio/mixkit-ending-show-audience-clapping-478.wav");
-let drawSong = new Audio ("audio/funny-sound-effect-for-quotjack-in-the-boxquot-sound-ver2-110924.mp3")
+let winSong = new Audio ("Audio/audience clapping.mp3");
+let drawSong = new Audio ("Audio/funny.wav")
 
 const test=(e)=>{
     // console.log(e);
